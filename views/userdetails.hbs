@@ -1,0 +1,27 @@
+<h1>USER LIST</h1>
+{{#if users}}
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Location</th>
+        <th>Website</th>
+    </tr>
+    {{#each users}}
+    <tr>
+        <td>
+            {{firstname}}
+        </td>
+        <td>
+            {{lastname}}
+        </td>
+        <td>
+            {{location}}
+        </td>  
+        <td>
+            {{website}}
+        </td>   
+    </tr>
+    {{/each}}
+</table>
+{{/if}}

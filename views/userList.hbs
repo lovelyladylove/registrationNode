@@ -1,0 +1,39 @@
+<h1>USER LIST</h1>
+{{#if users}}
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Location</th>
+        <th>Website</th>
+    </tr>
+    {{#each users}}
+    <tr>
+        <td>
+            {{id}}
+        </td>
+        <td>
+            {{username}}
+        </td>
+        <td>
+            {{email}}
+        </td>
+        <td>
+            {{location}}
+        </td>  
+        <td>
+            {{website}}
+        </td>   
+        <td>
+             <a href="/user/update/{{_id}}"><i class="far fa-grin-stars"></i>Update</a>
+             <a href="/user/delete/{{_id}}"><i class="far fa-surprise"></i>Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}
+
+
+
+

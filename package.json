@@ -1,0 +1,22 @@
+{
+  "name": "fbw3",
+  "version": "1.0.0",
+  "description": "registration form and login",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "*",
+    "hbs": "*",
+    "mongoose": "^5.3.12",
+    "node-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  },
+  "author": "lovelyladylove",
+  "license": "ISC"
+}

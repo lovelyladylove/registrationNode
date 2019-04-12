@@ -1,0 +1,63 @@
+
+<h1>BOOK LIST</h1>
+
+<form action = '/book/list' method="post">
+    <input type="text" name="author">
+    <button type="submit" class="btn btn-success">Search Author</button>
+</form>
+
+
+{{#if books}}
+  <table>
+      <tr>
+          <th>
+              BOOK Title
+          </th>
+          <th>
+              Author
+          </th>
+          <th>
+              Date Published
+          </th>
+          <th>
+              Language
+          </th>
+          <th>
+              Description
+          </th>
+          <th>
+              Updated Date
+          </th>
+          <th>
+              Edit
+          </th>
+      </tr>
+  {{#each books}}
+     <tr>
+         <td>
+             {{title}}
+         </td>
+         <td>
+             {{author}}
+         </td>
+         <td>
+             {{published}}
+         </td>
+         <td>
+             {{language}}
+         </td>
+         <td>
+             {{description}}
+         </td>
+         <td>
+             {{updatedDate}}
+         </td>
+
+         <td>
+             <a href="/book/update/{{_id}}"><i class="far fa-edit"></i></i></a>
+             <a href="/book/delete/{{_id}}"><i class="far fa-trash-alt"></i></a>
+         </td>
+     </tr>
+  {{/each}}
+  </table>
+{{/if}}
