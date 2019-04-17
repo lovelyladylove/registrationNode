@@ -6,7 +6,9 @@
   "homepage": "https://lovelyladylove.github.io/registrationNode/",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
