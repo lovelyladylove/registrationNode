@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "registration form and login",
   "main": "app.js",
+  "homepage": "https://lovelyladylove.github.io/registrationNode/",
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js"
@@ -10,7 +11,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "*",
-    "hbs": "*",
+    "gh-pages": "^2.0.1",
+    "hbs": "^4.0.4",
     "mongoose": "^5.3.12",
     "node-fetch": "^2.2.1"
   },
