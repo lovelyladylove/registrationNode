@@ -19,6 +19,7 @@
     "node-fetch": "^2.2.1"
   },
   "devDependencies": {
+    "gh-pages-deploy": "^0.5.1",
     "nodemon": "*"
   },
   "author": "lovelyladylove",
